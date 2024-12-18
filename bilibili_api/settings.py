@@ -45,7 +45,7 @@ timeout: float = 5.0
 web 请求超时时间设置
 """
 
-geetest_auto_open: bool = True
+geetest_auto_open: bool = False
 """
 是否自动打开 geetest 验证窗口
 """

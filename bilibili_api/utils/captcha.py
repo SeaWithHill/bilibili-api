@@ -108,7 +108,7 @@ def _start_server(urlhandler, hostname, port):
         #...    webbrowser.open(serverthread.url)
         #True
 
-        Let the server do its thing. We just need to monitor its status.
+        Let the server do its thing. We just need to amonitor its status.
         Use time.sleep so the loop doesn't hog the CPU.
 
         >>> starttime = time.monotonic()
