@@ -1,11 +1,11 @@
 # bilibili_api.dynamic
-
+import os
+import tracemalloc
 from time import time, sleep
 from datetime import datetime
 
 from bilibili_api import Picture, ResponseCodeException, user, dynamic
-
-from . import common
+from tests import common
 
 credential = common.get_credential()
 
@@ -66,7 +66,6 @@ async def test_g_Dynamic_set_like():
 # FIXME: 不知道为什么每一次自动删除都会出问题。单独跑一遍删除不会出问题。
 # 暂时停止动态发送、删除相关操作
 
-
 async def test_j_get_new_dynamic_users():
     return await dynamic.get_new_dynamic_users(common.get_credential())
 
@@ -93,3 +92,4 @@ async def test_n_get_dynamic_page_info_by_mid():
 
 async def test_p_get_reaction():
     return await dy.get_reaction()
+

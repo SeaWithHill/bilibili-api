@@ -9,7 +9,9 @@ aliases:
 ---
 
 > [!quote] 核心思想-原生理解
-> 
+{%- for line in upsList %}
+ > {{ line -}}
+{% endfor %}
 
 ---
 
